@@ -32,5 +32,5 @@ $container['db'] = function($c) {
 $app->get('/', [new App\Controllers\HomeController, 'index']);
 $app->get('/users', [new App\Controllers\UserController($container->db), 'index']);
 
-
+echo 'Test';
 $app->run();
